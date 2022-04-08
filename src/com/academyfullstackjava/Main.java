@@ -1,5 +1,5 @@
 package com.academyfullstackjava;
-
+import com.academyfullstackjava.exceptions.InsufficientStock;
 import com.academyfullstackjava.model.Product;
 
 public class Main {
@@ -9,7 +9,7 @@ public class Main {
 		try {
 			product.checkProductStock(15);			
 		} catch (InsufficientStock e) {
-			System.out.println(w.printStackTrace());
+			System.out.println(e.getMessage());
 		}
 		System.out.println("***FINE PROGRAMMA***");
 	}
